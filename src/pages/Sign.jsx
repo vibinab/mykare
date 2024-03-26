@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import Login from '../components/Login';
-import Signin from '../components/Signin';
+import SignIn from '../components/SignIn'
+import SignUp from '../components/SignUp'
 
 const Sign = () => {
     const [login, setLogin] = useState(true);
   return (
     <div className='w-full h-screen bg-gray-100 flex justify-center items-center'>
         {
-            login ? <Login login={setLogin} /> : <Signin login={setLogin}/>
+            login ? <SignIn login={setLogin} /> : <SignUp login={setLogin}/>
         }
     </div>
   )
