@@ -1,12 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Login from './components/Login'
+import Sign from './pages/Sign'
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Login/>} />
+        {/* route for login page */}
+        <Route path='/' element={<Sign/>} />
       </Routes>
     </Router>
   )
