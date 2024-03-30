@@ -53,7 +53,7 @@ const Admin = () => {
                 </thead>
                 <tbody className='border  border-black '>
                     {
-                       users.length>0 ? users?.map((user, i) => (
+                       users?.length>0 ? users?.map((user, i) => (
                             <tr key={i}>
                                 <td className='border text-center py-2  font-semibold border-black  '>{user.name}</td>
                                 <td className='text-center border  border-black'>

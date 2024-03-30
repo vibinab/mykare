@@ -122,12 +122,12 @@ const SignUp = () => {
             }
             registeredusers.push(adduserdata)
 
-            localStorage.setItem("currentuser",JSON.stringify(adduserdata))
+            // localStorage.setItem("currentuser",JSON.stringify(adduserdata))
             localStorage.setItem("registeredusers", JSON.stringify(registeredusers))
         }
 
         setErrorData(initalError)
-        setSuccess(" User Sucessfully Register")
+        setSuccess(" User Successfully Registered")
         setTimeout(()=> {
           navigate("/")
         },3000)
@@ -178,7 +178,7 @@ const SignUp = () => {
             type="password" 
             name="password"
             value={userData.password}
-            placeholder='Passowrd' 
+            placeholder='Password' 
             className='w-full border-2 border-gray-100 rounded-xl p-1 mt-1 bg-transparent'
             onChange={(e)=> handleInput(e)}
 
@@ -191,7 +191,7 @@ const SignUp = () => {
             type="password" 
             name="confirmpassword"
             value={userData.confirmpassword}
-            placeholder='Confirm Passowrd'
+            placeholder='Confirm Password'
             className='w-full border-2 border-gray-100 rounded-xl p-1 mt-1 bg-transparent'
             onChange={(e)=>handleInput(e)}
       />
