@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink,useNavigate } from 'react-router-dom'
 
-const SignIn = () => {
+const SignIns = () => {
   const navigate= useNavigate(); 
   const [userlogin, setUserLogin] = useState({
       name:"",
@@ -135,4 +135,4 @@ const SignIn = () => {
   )
 }
 
-export default SignIn
+export default SignIns

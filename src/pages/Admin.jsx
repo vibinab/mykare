@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import Signin from '../components/SignIn';
+import Signin from '../components/SignIns';
 
 const Admin = () => {
     // const [users, setUsers] = useState(Object.keys(localStorage));
